@@ -1,2 +1,2 @@
-src\gardenpeople\servlet\ShowProfileServlet.java
-src\gardenpeople\servlet\WorkPhotosUploadServlet.java
+src/gardenpeople/servlet/PersonalPhotoUploadServlet.java
+src/gardenpeople/servlet/WorkPhotosUploadServlet.java

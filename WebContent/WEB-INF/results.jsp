@@ -110,7 +110,11 @@
 <div style="margin-bottom:100px"></div>
 <div class="container">
 
-    <div class="largetext"><a href="findGardener">Search Page</a> -> Results</div>
+	<ol class="breadcrumb">
+		<li><a href = "findGardener">Search Page</a></li>
+		<li class = "active">Results</li>
+	</ol>
+    <!-- <div class="largetext"><a href="findGardener">Search Page</a> -> Results</div>-->
 
 
     <c:if test="${fn:length(gardeners) eq 0}"> Sorry there are no gardeners matching your search query at this time</c:if>

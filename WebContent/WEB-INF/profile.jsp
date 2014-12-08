@@ -274,7 +274,7 @@
                     </select> <label>
                     Of
                 </label>
-                    <input id="pac-input" class="form-control location" name="Location"
+                    <input id="pac-input" class="form-control location" name="Location" style="width:75%"
                            type="text"
                            placeholder="Please enter postcode"
                            value="<c:out value='${user.publicProfile.googleLocation}'/>"

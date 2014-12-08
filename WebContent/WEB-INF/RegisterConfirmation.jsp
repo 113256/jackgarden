@@ -119,7 +119,32 @@
 </div>
 </div>
 
+<script
+		src="${pageContext.request.contextPath}/resources/js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var loginError = $("body").attr("data-loginError")
+			//alert(valuePassedFromJSP);
+			if(loginError.length > 0){
+				$("#loginDropdown").click();
+				//alert(loginError);
 
+			}
+		});
+		//alert(myObject);
+	</script>
+	<!-- javascript-->
+	<script
+		src="${pageContext.request.contextPath}/resources/js/bootstrap.js"></script>
+
+
+	<!-- Scrolling Nav JavaScript -->
+	<script
+		src="${pageContext.request.contextPath}/resources/js/jquery.easing.min.js"></script>
+	<script
+			src="${pageContext.request.contextPath}/resources/js/checklogin.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/js/scrolling-nav.js"></script>
 
 </body>
 </html>

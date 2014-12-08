@@ -124,7 +124,7 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <span class="pull-right clickable"><a href="showProfile?id=${gardener.autoIncrementID}&${pageContext.request.queryString}">View Full Details</a></span>
-
+					
                 <div class="row">
                     <div class="col-md-2">
                         <c:if test="${gardener.publicProfile.profileImage.path eq null}">
@@ -161,6 +161,12 @@
                         </c:if>
                     </div>
                 </div>
+                <div class = "row"  >
+                <div class = "col-lg-12">
+                <div style = "text-align: center;">
+                <span class = "glyphicon glyphicon-chevron-down "></span></div>
+                
+                </div></div>
 
 
             </div>

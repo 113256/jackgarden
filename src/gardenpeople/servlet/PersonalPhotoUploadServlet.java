@@ -30,7 +30,7 @@ public class PersonalPhotoUploadServlet extends HttpServlet {
     //From http://www.journaldev.com/2122/servlet-3-file-upload-using-multipartconfig-annotation-and-part-interface
 
 
-    private static final String UPLOAD_PATH = "s";
+    private static final String UPLOAD_PATH = "C:\\gardenpeopleimages";
     private static final String ACCESS_ROOT = "/images/";
 
     protected void doPost(HttpServletRequest request,

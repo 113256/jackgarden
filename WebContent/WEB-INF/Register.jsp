@@ -45,7 +45,7 @@
 										style="padding: 10px; min-width: 240px;">
 
 
-										<form action="login" method="post" role="form"
+										<form action="${pageContext.request.contextPath}/login" method="post" role="form"
 											class="form-horizontal">
 
 											<input class="form-control" id="inputUsername"
@@ -82,14 +82,17 @@
 									<ul class="dropdown-menu">
 										<li><a href="details">My details</a></li>
 										<c:if test="${sessionScope.user.gardener}">
-											<li><a href="profile">My public profile</a></li>
+											<li><a href="showProfile?id=${sessionScope.user.autoIncrementID}">My profile</a></li>
+											<li><a href="profile">Edit profile</a></li>
 											<li><a href="photos">My photos</a></li>
+											
 										</c:if>
 									</ul></li>
+									
 								<li class=""><a class="" href="logout">Logout</a></li>
 							</c:otherwise>
 						</c:choose>
-
+						<li class=""><a class="" href="faq">FAQ</a></li>
 					</ul>
 				</div>
 

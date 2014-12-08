@@ -196,7 +196,7 @@
 			<div class="form-group">
 				<label for="phone">Phone Number:</label> <input type="text"
 																class="form-control" id="phone" name="phone"
-																placeholder="Enter post code" value="${user.phone}">
+																placeholder="Enter phone number" value="${user.phone}">
 			</div>
 			<%--<div class="form-group">
 				<label for="county">Select County:</label> <select class="form-control"

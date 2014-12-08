@@ -62,7 +62,7 @@
 										style="padding: 10px; min-width: 240px;">
 
 
-										<form action="login" method="post" role="form"
+										<form action="${pageContext.request.contextPath}/login" method="post" role="form"
 											class="form-horizontal">
 
 											<input class="form-control" id="inputUsername"
@@ -99,14 +99,17 @@
 									<ul class="dropdown-menu">
 										<li><a href="details">My details</a></li>
 										<c:if test="${sessionScope.user.gardener}">
-											<li><a href="profile">My public profile</a></li>
+											<li><a href="showProfile?id=${sessionScope.user.autoIncrementID}">My profile</a></li>
+											<li><a href="profile">Edit profile</a></li>
 											<li><a href="photos">My photos</a></li>
+											
 										</c:if>
 									</ul></li>
+									
 								<li class=""><a class="" href="logout">Logout</a></li>
 							</c:otherwise>
 						</c:choose>
-
+						<li class=""><a class="" href="faq">FAQ</a></li>
 					</ul>
 				</div>
 
@@ -119,8 +122,15 @@
 <div class="container">
 	
 	<ol class="breadcrumb">
-  <li><a href="findGardener">Search Page</a></li>
-  <li><a href="${searchTerm}">Results</a></li>
+	
+	
+	
+	 <c:if test="${not fn:contains(searchTerm,'home')}">
+	 	<li><a href="findGardener">Search Page</a></li>
+  		<li><a href="${searchTerm}">Results</a></li>
+	 </c:if>
+	
+  
   <li class="active">${gardener.publicProfile.tradename}'s Profile</li>
 </ol>
 	
@@ -294,8 +304,15 @@
 
 
     <div class="row">
-
-        <div class="col-md-5">
+		<c:choose>
+    <c:when test="${sessionScope.user.gardener}">
+        <div class="col-lg-12">
+    	</c:when>
+    	<c:otherwise>
+    	    <div class="col-lg-5">
+    	</c:otherwise>
+	</c:choose>
+        
         <h3>User Ratings</h3>
 
         <div>Average Score: ${gardener.avgReviewScore} from ${gardener.reviewCount} reviews</div>
@@ -338,6 +355,8 @@
 
         </c:if>
         </div>
+        
+        <c:if test="${!sessionScope.user.gardener}">
         <div class="col-md-6">
             <h3>Leave a Review</h3>
 
@@ -385,7 +404,7 @@
             </div>
 
         </div>
-
+</c:if>
 
     </div>
 

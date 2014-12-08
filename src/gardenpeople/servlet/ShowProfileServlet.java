@@ -30,7 +30,7 @@ public class ShowProfileServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         //leave review
-
+    	//request.setAttribute("referer", referer);
         ArrayList<String> errors = new ArrayList<String>();
         Long gardenerID  = getGardenerID(request);
         String searchTerm =  request.getParameter("search_term");

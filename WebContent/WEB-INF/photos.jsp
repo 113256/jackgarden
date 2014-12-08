@@ -59,7 +59,7 @@
 										style="padding: 10px; min-width: 240px;">
 
 
-										<form action="login" method="post" role="form"
+										<form action="${pageContext.request.contextPath}/login" method="post" role="form"
 											class="form-horizontal">
 
 											<input class="form-control" id="inputUsername"
@@ -96,14 +96,17 @@
 									<ul class="dropdown-menu">
 										<li><a href="details">My details</a></li>
 										<c:if test="${sessionScope.user.gardener}">
-											<li><a href="profile">My public profile</a></li>
+											<li><a href="showProfile?id=${sessionScope.user.autoIncrementID}">My profile</a></li>
+											<li><a href="profile">Edit profile</a></li>
 											<li><a href="photos">My photos</a></li>
+											
 										</c:if>
 									</ul></li>
+									
 								<li class=""><a class="" href="logout">Logout</a></li>
 							</c:otherwise>
 						</c:choose>
-
+						<li class=""><a class="" href="faq">FAQ</a></li>
 					</ul>
 				</div>
 
@@ -112,10 +115,10 @@
 		</div>
 	</div>
 	<!--end navbar-->
-
-<div class="col-lg-6">
+<div class = "container">
+<div class="col-lg-12">
   <h1>My Profile</h1>
-
+<div class="alert alert-success" role="alert">Upload some photos of your previous work here.</div>
  <%-- <c:if test="${not user.profileRecordedOnDatabase}">
     <div class="warning">You have no profile saved in our records. Please create one</div>
   </c:if>
@@ -169,7 +172,7 @@
 
 
 
-</div>
+</div></div>
 <!-- jquery-->
 
 

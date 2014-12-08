@@ -28,7 +28,7 @@ import java.util.List;
         maxRequestSize = 1024 * 1024 * 100)       // 100 MB
 public class WorkPhotosUploadServlet extends HttpServlet {
 
-    private static final String UPLOAD_PATH = "G:\\JavaEE_Dev\\imageServer\\images";
+    private static final String UPLOAD_PATH = "C:\\gardenpeopleimages";
     private static final String ACCESS_ROOT = "/images/";
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

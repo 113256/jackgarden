@@ -31,15 +31,16 @@
 					<span class="glyphicon glyphicon-th-list"></span>
 				</button>
 
-				<div class="collapse navbar-collapse navHeaderCollapse">
+				<div class="collapse navbar-collapse navHeaderCollapse">`
 					<!--navbar-nav gives styling and navbar-right aligns it to the right-->
 					<ul class="nav navbar-nav navbar-right">
 						<c:choose>
 
 
 							<c:when test="${empty sessionScope.user}">
+
 								<li class="dropdown"><a class="dropdown-toggle" href=""
-									data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
+									data-toggle="dropdown" id="loginDropdown">Sign In <strong class="caret"></strong></a>
 
 									<div class="dropdown-menu"
 										style="padding: 10px; min-width: 240px;">
@@ -54,10 +55,15 @@
 												class="form-control" id="inputPassword" name="inputPassword"
 												placeholder="Password" type="password"
 												style="margin-bottom: .5em">
+											<c:if test="${!empty requestScope.loginError}">
+												<div class="error">${requestScope.loginError}</div>
+
+											</c:if>
 
 											<div class="checkbox">
 												<label><input type="checkbox"> Remember me</label>
 											</div>
+
 
 											<input class="btn btn-primary"
 												style="margin-top: .75em; width: 100%; height: 32px; font-size: 13px;"
@@ -67,6 +73,7 @@
 
 									</div></li>
 								<li class=""><a class="" href="Register">Register</a></li>
+								<li class=""><a class="" href="findGardener">Find a gardener</a></li>
 							</c:when>
 							<c:otherwise>
 								<li class=""><a class="" href="#">${sessionScope.user.username}</a></li>
@@ -74,10 +81,10 @@
 									data-toggle="dropdown">My Account <strong class="caret"></strong></a>
 
 									<ul class="dropdown-menu">
-										<li><a href="details">my details</a></li>
+										<li><a href="details">My details</a></li>
 										<c:if test="${sessionScope.user.gardener}">
-											<li><a href="profile">my public profile</a></li>
-											<li><a href="photos">my photos</a></li>
+											<li><a href="profile">My public profile</a></li>
+											<li><a href="photos">My photos</a></li>
 										</c:if>
 									</ul></li>
 								<li class=""><a class="" href="logout">Logout</a></li>
@@ -88,9 +95,10 @@
 				</div>
 
 			</div>
-			<!--end of nav bar-->
+			
 		</div>
 	</div>
+	<!--end navbar-->
 
 	<div class="container">
 	<h1>My Details
@@ -132,10 +140,11 @@
 			    <b>House number or name</b>: ${user.houseNumberName}<br>
 			    <b>Street Name</b>: ${user.street} <br>
 			    <b>Post Code</b>: ${user.postcode} <br>
-			    <c:if test="${sessionScope.user.gardener}">
+			    <b>Phone</b>: ${user.phone} <br>
+			    <!--<c:if test="${sessionScope.user.gardener}">
 					<b>Company or trading name:</b>${user.publicProfile.tradename}<br>
 					<b>Description:</b>${user.publicProfile.description}<br>
-				</c:if>
+				</c:if>-->
 			  </div>
 		</div>
 	</div>

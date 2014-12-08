@@ -24,7 +24,7 @@
 			<div class="container">
 				<!--navbar-brand is used for titles - it has larger text -->
 
-				<a href="" class="navbar-brand">Gardener Website</a>
+				<a href="home" class="navbar-brand">Gardener Website</a>
 
 				<!-- button
             this button will appear if screen collapses (smaller screen)
@@ -84,10 +84,10 @@
 									data-toggle="dropdown">My Account <strong class="caret"></strong></a>
 
 									<ul class="dropdown-menu">
-										<li><a href="details">my details</a></li>
+										<li><a href="details">My details</a></li>
 										<c:if test="${sessionScope.user.gardener}">
-											<li><a href="profile">my public profile</a></li>
-											<li><a href="photos">my photos</a></li>
+											<li><a href="profile">My public profile</a></li>
+											<li><a href="photos">My photos</a></li>
 										</c:if>
 									</ul></li>
 								<li class=""><a class="" href="logout">Logout</a></li>
@@ -129,24 +129,26 @@
 	<div class="row"
 		style="margin-left: 2vw; margin-right: 2vw; text-align: center">
 		<div class="col-md-6">
+		<div onclick="window.location = 'Register'">
 			<div class="jumbotron">
 				<h1>Are You A Gardener?</h1>
-				<br> <br> <br> <a class="btn btn-info">Click Here</a>
+				<br> <br> <br> <a class="btn btn-info" href = "Register">Click Here</a>
 			</div>
 		</div>
-
+	</div>
 		<div class="col-md-6">
+		<div onclick="window.location = 'findGardener'">
 			<div class="jumbotron">
 				<h1>Looking For A Gardener</h1>
 				<br> <br> <br> <a class="btn btn-info"
 					href="findGardener">Click Here</a>
-			</div>
+			</div></div>
 		</div>
 	</div>
 
 	</section>
 
-
+<!--  
 	<section id="whatWeDo" class="bg-light-gray">
 	<div class="container" style="text-align: center">
 		<br> <br> <br>
@@ -200,13 +202,20 @@
 		<br> <br>
 	</div>
 	</section>
-
+-->
 
 	<div style="margin-bottom: 20vw">
 		<br>
 	</div>
 
 	<!-- jquery-->
+	<script type="text/javascript">
+	//$('business').click(function(){
+	//  window.location = "Register";
+	//});
+	</script>
+	
+	
 	<script
 		src="${pageContext.request.contextPath}/resources/js/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript">

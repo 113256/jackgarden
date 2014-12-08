@@ -32,7 +32,7 @@
 			<div class="container">
 				<!--navbar-brand is used for titles - it has larger text -->
 
-				<a href="" class="navbar-brand">Gardener Website</a>
+				<a href="home" class="navbar-brand">Gardener Website</a>
 
 				<!-- button
             this button will appear if screen collapses (smaller screen)
@@ -92,10 +92,10 @@
 									data-toggle="dropdown">My Account <strong class="caret"></strong></a>
 
 									<ul class="dropdown-menu">
-										<li><a href="details">my details</a></li>
+										<li><a href="details">My details</a></li>
 										<c:if test="${sessionScope.user.gardener}">
-											<li><a href="profile">my public profile</a></li>
-											<li><a href="photos">my photos</a></li>
+											<li><a href="profile">My public profile</a></li>
+											<li><a href="photos">My photos</a></li>
 										</c:if>
 									</ul></li>
 								<li class=""><a class="" href="logout">Logout</a></li>
@@ -143,40 +143,11 @@
 		
 		<h3>Find gardeners near me</h3>
 		<form role="form" action="" method="post">
-		<div class="row">
-				<!--row for "find a gardener in:"-->
-				
-				<!-- 
-			<div class="col-md-6">
-				<label>Find a gardener in:</label>
-				<div class="form-group">
-					<select class="form-control" name="location" required>
-						<option value="" disabled selected>Select your option</option>
-						<option value="londonNorth">London, North</option>				  
-					</select>
-				</div>
-			</div>
-			-->
-			<div class="col-md-6">
-				<!-- <label>Or Within:</label
-				<div class="form-inline">
-					<div class="form-group">
-						<select class="form-control" name="radius" required>
-							<option value="" disabled selected>Select your option</option>
-							<option value="5">5 miles</option>
-							<option value="10">10 miles</option>
-							<option value="20">20 miles</option>
-						</select>
-						<label>of</label>
-					</div>
-				</div>	-->		
-			<!-- </div>-->	
-		<!--</div>-->	
-			<!--row for "find a gardener in:"-->
 		
-		<div class="row">
+		
+		<div class="">
 				<!--map-->
-			<div class="col-lg-12">	
+			<div class="">	
 				<div class="form-group">
 					<label>Location</label>
 					<input id="pac-input" class="form-control" name="Location"
@@ -184,56 +155,21 @@
 							placeholder="Enter a location and the details will be filled in"
 							required>
 				</div>
-
-			<!--table for address form-->
-			<!-- <table id="address">
-				<tr class="spaceUnder">
-					<td>Address</td> <!-- if location doesnt work use address instead-->
-					<!--<td colspan="3"><input class="form-control" id="Address"
-								name="Address" disabled="true" />  </td>-->
-				<!-- </tr>-->
-				<!--  
-				<tr class="spaceUnder">
-					<td>Street address</td>
-					<td><input class="form-control" id="street_number"
-								name="StreetNumber" disabled="true"></input></td>
-					<td colspan="2"><input class="form-control" id="route"
-								name="Route" disabled="true"></input></td> <!-- route is street name e.g. gower street -->
-				<!--  </tr>-->
-		   <!--  
-				<tr tr class="spaceUnder">
-					<td>City</td>
-					<td colspan="3"><input class="form-control" id="locality"
-								name="City" disabled="true"></input></td>
-				</tr>
-				
-				<tr tr class="spaceUnder">
-					<td>State</td>
-					<td><input class="form-control"
-								id="administrative_area_level_1" name="State" disabled="true"></input></td>
-					<td>Zip code</td>
-					<td><input class="form-control" id="postal_code"
-								name="ZipCode" disabled="true"></input></td>
-				</tr>
-				
-				<tr tr class="spaceUnder">
-					<td>Country</td>
-					<td colspan="3"><input class="form-control" id="country"
-								name="Country" disabled="true"></input></td>	
-				</tr>
-		  		-->
-				<tr tr class="spaceUnder">
-					<td>Latitude</td>
-					<td><input id="Latitude" class="field" name="Latitude"
-								readonly /></td>
-					<td>Longitude</td>
-					<td><input id="Longitude" class="field" name="Longitude"
-								readonly /></td>
-				</tr>
-			</table>
+			</div>
+			
+					
+				<div class = "form-inline">
+					<label>Latitude</label>
+					<input id="Latitude" class="form-control" name="Latitude" style = "width:30%"
+								readonly />
+					<label>Longitde</label>
+					<input id="Longitude" class="form-control" name="Longitude" style = "width:30%"
+								readonly />
+				</div>
+			
 			
 		</div>	
-	</div>
+	
 			<!--maprow-->
 			
 			
@@ -254,32 +190,25 @@
 			</div>
 			<div id="collapse1b" class="panel-collapse collapse ">
 			  <div class="panel-body">
-					   <label>Show Only If:</label>
+					   <label>Show Only If They Have The Following Qualifications:</label>
 		   <div class="form-group">
 				<label class="checkbox-inline">
-				<input id="" type="checkbox" name="filter" value="photo" > Has Personal Photo
+				<input id="" type="checkbox" name="filter" value="" checked> Holds RHS Level 1 Certificate
 				</label>
 				
 				<label class="checkbox-inline">
-				<input id="" type="checkbox" name="filter" value="feedback"> Has User Feedback
+				<input id="" type="checkbox" name="filter" value="" checked> Holds RHS Level 2 Certificate
 				</label>
 				
 				<label class="checkbox-inline">
-				<input id="" type="checkbox" name="filter" value="previous" > Photos of previous jobs
+				<input id="" type="checkbox" name="filter" value="" checked> Holds RHS Level 3 Certificate
 				</label>
 				
 				<label class="checkbox-inline">
-				<input id="" type="checkbox" name="filter" value="rhs" > Holds RHS Level 2/3 Certificate
+				<input id="" type="checkbox" name="filter" value="" checked> Holds RHS Master Certificate
 				</label>
 				
-				<label class="checkbox-inline">
-				<input id="" type="checkbox" name="filter" value="liability"
-									> Liability insurance
-				</label>
-				
-				<label class="checkbox-inline">
-				<input id="" type="checkbox" name="filter" value="vat" >VAT registered
-				</label>
+			
 				
 			</div>
 		   
@@ -289,21 +218,19 @@
 				<select class="form-control" name="" >
 					  <option value="" disabled selected>Select your option</option>
 					  <option value="">Lawn and General Maintenance</option>
+					  <option value="">Garden Design</option>
+					  <option value="">Tree Surgery</option>
+					  <option value="">Water Features</option>
+					  <option value="">Fencing</option>
+					  <option value="">Paving</option>
+					  <option value="">Decking</option>
 				</select>
 			</div>
 			
-			 
+			 <label>Show only if</label>
 			<div class="form-group">
-			<label>This job is suited to:</label>
-				<label class="radio-inline">
-				<input type="radio" name="suited" value="everyone"> Everyone
-				</label>
-				
-				<label class="radio-inline">
-				<input type="radio" name="suited" value="single"> Single person
-				</label>
-				<label class="radio-inline">
-				<input type="radio" name="suited" value="single"> Team of gardeners
+			<label class="checkbox-inline">
+				<input id="" type="checkbox" name="filter" value="" checked> Has a profile photo
 				</label>
 			</div>	
 		   

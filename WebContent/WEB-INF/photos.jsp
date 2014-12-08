@@ -28,85 +28,90 @@
 
 
 <!--navbar -->
-<div style="">
-  <div class="navbar navbar-inverse navbar-fixed-top">
-    <!--navbar-static-top will make it disappear if you scroll horizontally -->
-    <div class="container">
-      <!--navbar-brand is used for titles - it has larger text -->
+	<div style="">
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<!--navbar-static-top will make it disappear if you scroll horizontally -->
+			<div class="container">
+				<!--navbar-brand is used for titles - it has larger text -->
 
-      <a href="home" class="navbar-brand">Gardener Website</a>
+				<a href="home" class="navbar-brand">Gardener Website</a>
 
-      <!-- button
-  this button will appear if screen collapses (smaller screen)
-  -->
-      <button class="navbar-toggle" data-toggle="collapse"
-              data-target=".navHeaderCollapse">
-        <span class="glyphicon glyphicon-th-list"></span>
-      </button>
+				<!-- button
+            this button will appear if screen collapses (smaller screen)
+            -->
+				<button class="navbar-toggle" data-toggle="collapse"
+					data-target=".navHeaderCollapse">
+					<span class="glyphicon glyphicon-th-list"></span>
+				</button>
 
-      <div class="collapse navbar-collapse navHeaderCollapse">
-        <!--navbar-nav gives styling and navbar-right aligns it to the right-->
-        <ul class="nav navbar-nav navbar-right">
-          <c:choose>
-
-
-            <c:when test="${empty sessionScope.user}">
-              <li class="dropdown"><a class="dropdown-toggle" href=""
-                                      data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
-
-                <div class="dropdown-menu"
-                     style="padding: 10px; min-width: 240px;">
+				<div class="collapse navbar-collapse navHeaderCollapse">`
+					<!--navbar-nav gives styling and navbar-right aligns it to the right-->
+					<ul class="nav navbar-nav navbar-right">
+						<c:choose>
 
 
-                  <form action="login" method="post" role="form"
-                        class="form-horizontal">
+							<c:when test="${empty sessionScope.user}">
 
-                    <input class="form-control" id="inputUsername"
-                           name="inputUsername" placeholder="Username" type="text"
-                           style="margin-bottom: .5em"> <input
-                          class="form-control" id="inputPassword" name="inputPassword"
-                          placeholder="Password" type="password"
-                          style="margin-bottom: .5em">
+								<li class="dropdown"><a class="dropdown-toggle" href=""
+									data-toggle="dropdown" id="loginDropdown">Sign In <strong class="caret"></strong></a>
 
-                    <div class="checkbox">
-                      <label><input type="checkbox"> Remember me</label>
-                    </div>
-
-                    <input class="btn btn-primary"
-                           style="margin-top: .75em; width: 100%; height: 32px; font-size: 13px;"
-                           type="submit" name="commit" value="Sign In">
-                  </form>
+									<div class="dropdown-menu"
+										style="padding: 10px; min-width: 240px;">
 
 
-                </div>
-              </li>
-              <li class=""><a class="" href="Register">Register</a></li>
-            </c:when>
-            <c:otherwise>
-              <li class=""><a class="" href="#">${sessionScope.user.username}</a></li>
-              <li class="dropdown"><a class="dropdown-toggle" href=""
-                                      data-toggle="dropdown">My Account <strong
-                      class="caret"></strong></a>
+										<form action="login" method="post" role="form"
+											class="form-horizontal">
 
-                <ul class="dropdown-menu">
-                  <li><a href="details">my details</a></li>
-                  <c:if test="${sessionScope.user.gardener}">
-                    <li><a href="profile">my public profile</a></li>
-                      <li><a href="photos">my photos</a></li>
-                  </c:if>
-                </ul>
-              </li>
-              <li class=""><a class="" href="logout">Logout</a></li>
-            </c:otherwise>
-          </c:choose>
+											<input class="form-control" id="inputUsername"
+												name="inputUsername" placeholder="Username" type="text"
+												style="margin-bottom: .5em"> <input
+												class="form-control" id="inputPassword" name="inputPassword"
+												placeholder="Password" type="password"
+												style="margin-bottom: .5em">
+											<c:if test="${!empty requestScope.loginError}">
+												<div class="error">${requestScope.loginError}</div>
 
-        </ul>
-      </div>
+											</c:if>
 
-    </div>
-    <!--end of nav bar-->
-  </div>
-</div>
+											<div class="checkbox">
+												<label><input type="checkbox"> Remember me</label>
+											</div>
+
+
+											<input class="btn btn-primary"
+												style="margin-top: .75em; width: 100%; height: 32px; font-size: 13px;"
+												type="submit" name="commit" value="Sign In">
+										</form>
+
+
+									</div></li>
+								<li class=""><a class="" href="Register">Register</a></li>
+								<li class=""><a class="" href="findGardener">Find a gardener</a></li>
+							</c:when>
+							<c:otherwise>
+								<li class=""><a class="" href="#">${sessionScope.user.username}</a></li>
+								<li class="dropdown"><a class="dropdown-toggle" href=""
+									data-toggle="dropdown">My Account <strong class="caret"></strong></a>
+
+									<ul class="dropdown-menu">
+										<li><a href="details">My details</a></li>
+										<c:if test="${sessionScope.user.gardener}">
+											<li><a href="profile">My public profile</a></li>
+											<li><a href="photos">My photos</a></li>
+										</c:if>
+									</ul></li>
+								<li class=""><a class="" href="logout">Logout</a></li>
+							</c:otherwise>
+						</c:choose>
+
+					</ul>
+				</div>
+
+			</div>
+			
+		</div>
+	</div>
+	<!--end navbar-->
 
 <div class="col-lg-6">
   <h1>My Profile</h1>

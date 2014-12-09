@@ -135,11 +135,21 @@
 		
 		<div class="col-md-6">
 		<div onclick="window.location = 'findGardener'">
+		<div class = "hoverHand">
 			<div class="jumbotron">
+			
 				<h1>Looking For A Gardener</h1>
-				<br> <br> <br> <a class="btn btn-info"
-					href="findGardener">Click Here</a>
-			</div></div>
+				<br> <br> <br> <!--<a class="btn btn-info"
+					href="findGardener">Click Here</a>  -->
+					 <div class="panel-body" style="font-size:20px; text-align: left">
+			 
+			  <span class="glyphicon glyphicon-ok"></span> We have registered professionals with a wide range of skills<br>
+			  <span class="glyphicon glyphicon-ok"></span> View professionals who work in your area.<br>
+			  <span class="glyphicon glyphicon-ok"></span> View detailed profiles and user feedback to help you decide who to hire.<br>
+			 <br>
+			 </div>
+					
+			</div></div></div>
 		</div>
 		
 		
@@ -147,10 +157,10 @@
 		
 		<div class="col-md-6">
 		<div onclick="window.location = 'Register'">
-			<div class="jumbotron">
+			<div class = "hoverHand"><div class="jumbotron">
 				<h1>Are You A Gardener?</h1>
-				<br> <br> <br> <a class="btn btn-info" href = "Register">Click Here</a>
-			</div>
+				<br> <br> <br> <!--<a class="btn btn-info" href = "Register">Click Here</a>  -->
+			</div></div>
 		</div>
 	</div>
 	

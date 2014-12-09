@@ -148,9 +148,8 @@
 		<form role="form" action="" method="post">
 		
 		
-		<div class="">
-				<!--map-->
-			<div class="">	
+		<div class = "row">
+			<div class = "col-lg-6">
 				<div class="form-group">
 					<label>Location</label>
 					<input id="pac-input" class="form-control" name="Location"
@@ -158,27 +157,90 @@
 							placeholder="Enter a location and the details will be filled in"
 							required>
 				</div>
-			</div>
+			
 			
 					
 				<div class = "form-inline">
-					<label>Latitude</label>
-					<input id="Latitude" class="form-control" name="Latitude" style = "width:30%"
+					
+					<input type = "hidden" id="Latitude" class="form-control" name="Latitude" style = "width:30%"
 								readonly />
-					<label>Longitde</label>
-					<input id="Longitude" class="form-control" name="Longitude" style = "width:30%"
+					
+					<input type = "hidden" id="Longitude" class="form-control" name="Longitude" style = "width:30%"
 								readonly />
 				</div>
+			</div>
+			<div class = "col-lg-6">
+				
+			  <h4 >
+			   Advanced Search
+				
+				
+			  </h4>
+			  
+					   <label>Show Only If They Have The Following Qualifications:</label>
+		   <div class="form-group">
+				<label class="checkbox-inline">
+				<input id="" type="checkbox" name="filter" value="" checked> Holds RHS Level 1 Certificate
+				</label>
+				
+				<label class="checkbox-inline">
+				<input id="" type="checkbox" name="filter" value="" checked> Holds RHS Level 2 Certificate
+				</label>
+				
+				<label class="checkbox-inline">
+				<input id="" type="checkbox" name="filter" value="" checked> Holds RHS Level 3 Certificate
+				</label>
+				
+				<label class="checkbox-inline">
+				<input id="" type="checkbox" name="filter" value="" checked> Holds RHS Master Certificate
+				</label>
+				
+			
+				
+			</div>
+		   
+		   <label>What Type of Service are you looking for?</label>
+		   
+		   <div class="form-group">
+				<select class="form-control" name="" >
+					  <option value="" disabled selected>Select your option</option>
+					  <option value="">Lawn and General Maintenance</option>
+					  <option value="">Garden Design</option>
+					  <option value="">Tree Surgery</option>
+					  <option value="">Water Features</option>
+					  <option value="">Fencing</option>
+					  <option value="">Paving</option>
+					  <option value="">Decking</option>
+				</select>
+			</div>
+			
+			 <label>Show only if</label>
+			<div class="form-group">
+			<label class="checkbox-inline">
+				<input id="" type="checkbox" name="filter" value="" checked	> Has a profile photo
+				</label>
+			</div>	
+		   
+			</div>
+			
+			  
+			 
+			
+		</div>
+			
+				
+			
+				
 			
 			
-		</div>	
+			
 	
 			<!--maprow-->
 			
 			
 		   <br><br><br>
 		   
-		   
+		   <!--  
 		<div class="panel-group" id="accordionb">	
 		<div class="panel panel-default" id="gardener">
 			<div class="panel-heading">
@@ -240,7 +302,7 @@
 			 </div>
 			</div>
 		</div>
-		</div>
+		</div>-->
 		    <input type="submit" name="searchbypos" value="Search" />
 		
 		   

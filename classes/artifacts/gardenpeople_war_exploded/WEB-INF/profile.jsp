@@ -28,85 +28,93 @@
 
 
 <!--navbar -->
-<div style="">
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <!--navbar-static-top will make it disappear if you scroll horizontally -->
-        <div class="container">
-            <!--navbar-brand is used for titles - it has larger text -->
+	<div style="">
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<!--navbar-static-top will make it disappear if you scroll horizontally -->
+			<div class="container">
+				<!--navbar-brand is used for titles - it has larger text -->
 
-            <a href="home" class="navbar-brand">Gardener Website</a>
+				<a href="home" class="navbar-brand">Gardener Website</a>
 
-            <!-- button
-        this button will appear if screen collapses (smaller screen)
-        -->
-            <button class="navbar-toggle" data-toggle="collapse"
-                    data-target=".navHeaderCollapse">
-                <span class="glyphicon glyphicon-th-list"></span>
-            </button>
+				<!-- button
+            this button will appear if screen collapses (smaller screen)
+            -->
+				<button class="navbar-toggle" data-toggle="collapse"
+					data-target=".navHeaderCollapse">
+					<span class="glyphicon glyphicon-th-list"></span>
+				</button>
 
-            <div class="collapse navbar-collapse navHeaderCollapse">
-                <!--navbar-nav gives styling and navbar-right aligns it to the right-->
-                <ul class="nav navbar-nav navbar-right">
-                    <c:choose>
-
-
-                        <c:when test="${empty sessionScope.user}">
-                            <li class="dropdown"><a class="dropdown-toggle" href=""
-                                                    data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
-
-                                <div class="dropdown-menu"
-                                     style="padding: 10px; min-width: 240px;">
+				<div class="collapse navbar-collapse navHeaderCollapse">`
+					<!--navbar-nav gives styling and navbar-right aligns it to the right-->
+					<ul class="nav navbar-nav navbar-right">
+						<c:choose>
 
 
-                                    <form action="login" method="post" role="form"
-                                          class="form-horizontal">
+							<c:when test="${empty sessionScope.user}">
 
-                                        <input class="form-control" id="inputUsername"
-                                               name="inputUsername" placeholder="Username" type="text"
-                                               style="margin-bottom: .5em"> <input
-                                            class="form-control" id="inputPassword" name="inputPassword"
-                                            placeholder="Password" type="password"
-                                            style="margin-bottom: .5em">
+								<li class="dropdown"><a class="dropdown-toggle" href=""
+									data-toggle="dropdown" id="loginDropdown">Sign In <strong class="caret"></strong></a>
 
-                                        <div class="checkbox">
-                                            <label><input type="checkbox"> Remember me</label>
-                                        </div>
-
-                                        <input class="btn btn-primary"
-                                               style="margin-top: .75em; width: 100%; height: 32px; font-size: 13px;"
-                                               type="submit" name="commit" value="Sign In">
-                                    </form>
+									<div class="dropdown-menu"
+										style="padding: 10px; min-width: 240px;">
 
 
-                                </div>
-                            </li>
-                            <li class=""><a class="" href="Register">Register</a></li>
-                        </c:when>
-                        <c:otherwise>
-                            <li class=""><a class="" href="#">${sessionScope.user.username}</a></li>
-                            <li class="dropdown"><a class="dropdown-toggle" href=""
-                                                    data-toggle="dropdown">My Account <strong
-                                    class="caret"></strong></a>
+										<form action="${pageContext.request.contextPath}/login" method="post" role="form"
+											class="form-horizontal">
 
-                                <ul class="dropdown-menu">
-                                    <li><a href="details">my details</a></li>
-                                    <c:if test="${sessionScope.user.gardener}">
-                                        <li><a href="profile">my public profile</a></li>
-                                        <li><a href="photos">my portfolio photos</a></li>
-                                    </c:if>
-                                </ul>
-                            </li>
-                            <li class=""><a class="" href="logout">Logout</a></li>
-                        </c:otherwise>
-                    </c:choose>
+											<input class="form-control" id="inputUsername"
+												name="inputUsername" placeholder="Username" type="text"
+												style="margin-bottom: .5em"> <input
+												class="form-control" id="inputPassword" name="inputPassword"
+												placeholder="Password" type="password"
+												style="margin-bottom: .5em">
+											<c:if test="${!empty requestScope.loginError}">
+												<div class="error">${requestScope.loginError}</div>
 
-                </ul>
-            </div>
+											</c:if>
 
-        </div>
-        <!--end of nav bar-->
-    </div>
-</div>
+											<div class="checkbox">
+												<label><input type="checkbox"> Remember me</label>
+											</div>
+
+
+											<input class="btn btn-primary"
+												style="margin-top: .75em; width: 100%; height: 32px; font-size: 13px;"
+												type="submit" name="commit" value="Sign In">
+										</form>
+
+
+									</div></li>
+								<li class=""><a class="" href="Register">Register</a></li>
+								<li class=""><a class="" href="findGardener">Find a gardener</a></li>
+							</c:when>
+							<c:otherwise>
+								<li class=""><a class="" href="#">${sessionScope.user.username}</a></li>
+								<li class="dropdown"><a class="dropdown-toggle" href=""
+									data-toggle="dropdown">My Account <strong class="caret"></strong></a>
+
+									<ul class="dropdown-menu">
+										<li><a href="details">My details</a></li>
+										<c:if test="${sessionScope.user.gardener}">
+											<li><a href="showProfile?id=${sessionScope.user.autoIncrementID}">My profile</a></li>
+											<li><a href="profile">Edit profile</a></li>
+											<li><a href="photos">My photos</a></li>
+											
+										</c:if>
+									</ul></li>
+									
+								<li class=""><a class="" href="logout">Logout</a></li>
+							</c:otherwise>
+						</c:choose>
+						<li class=""><a class="" href="faq">FAQ</a></li>
+					</ul>
+				</div>
+
+			</div>
+			
+		</div>
+	</div>
+	<!--end navbar-->
 
 <div class="container">
 
@@ -266,7 +274,7 @@
                     </select> <label>
                     Of
                 </label>
-                    <input id="pac-input" class="form-control location" name="Location"
+                    <input id="pac-input" class="form-control location" name="Location" style="width:75%"
                            type="text"
                            placeholder="Please enter postcode"
                            value="<c:out value='${user.publicProfile.googleLocation}'/>"
@@ -275,13 +283,14 @@
 
                 </div>
 
-
-                <input id="Latitude" class="field" name="Latitude"
+			<div class = "form-inline">
+                <input id="Latitude" class=form-control name="Latitude" style = "width:30%"
                        readonly value="<c:out value='${user.publicProfile.latitude}'/>"/>
 
-                <input id="Longitude" class="field" name="Longitude"
-                       readonly value="<c:out value='${user.publicProfile.longitude}'/>"/>
 
+                <input id="Longitude" class="form-control" name="Longitude" style = "width:30%"
+                       readonly value="<c:out value='${user.publicProfile.longitude}'/>"/>
+</div>
 
                <br><br>
                 <div class="form-group">
@@ -304,7 +313,7 @@
 
             <form role="form" action="PersonalPhoto" method="post" enctype="multipart/form-data">
                 <legend>Personal or Company Photo</legend>
-                <p>choose A personal photo to upload to make your profile stand out. This can be a personal or company
+                <p>Choose a personal photo to upload to make your profile stand out. This can be a personal or company
                     photo
                     or logo:</p>
 
@@ -332,7 +341,7 @@
 
     </div>
 </div>
-
+<div style = "margin-bottom:5vw"></div>
 
 <!-- jquery-->
 

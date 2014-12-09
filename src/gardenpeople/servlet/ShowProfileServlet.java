@@ -89,6 +89,7 @@ public class ShowProfileServlet extends HttpServlet {
 
         String searchTerm = getSearchTerm(request);// get parameters necessary to link back to the exact search from the view profile page
         Long gardenerID  = getGardenerID(request);
+
         if(gardenerID == null){
             response.sendRedirect("home");
             return;
@@ -96,11 +97,16 @@ public class ShowProfileServlet extends HttpServlet {
         Gardener gardener = getGardenerWithImagesAndReviews(gardenerID);
         if(gardener!= null){
 
-             request.setAttribute("searchTerm", searchTerm);
+
+            request.setAttribute("searchTerm", searchTerm);
             request.setAttribute("lat", request.getParameter("lat"));
             request.setAttribute("lng", request.getParameter("lng"));
             request.setAttribute("name", request.getParameter("name"));
             request.setAttribute("gardener", gardener);
+            request.getRequestDispatcher("/WEB-INF/showProfile.jsp").forward(request,response);
+        }else{
+            request.setAttribute("message", "you do no not have a profile setup yet. Please create your profile first under 'edit profile'");
+
             request.getRequestDispatcher("/WEB-INF/showProfile.jsp").forward(request,response);
         }
 
@@ -128,6 +134,9 @@ public class ShowProfileServlet extends HttpServlet {
         Gardener gardener = gardenerDAO.getGardenerWithProfile(gardenerID);
 
         if(gardener!= null){
+            if(gardener.getPublicProfile() == null){
+                return gardener;
+            }
             System.out.println("found gardener");
             ImageDAO imageDAO = new ImageDAO();
             ArrayList<ProfileImage> images = imageDAO.getImages(gardenerID);

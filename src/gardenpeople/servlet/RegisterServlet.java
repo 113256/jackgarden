@@ -29,8 +29,13 @@ public class RegisterServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        ArrayList<County> counties = (ArrayList<County>) getServletContext().getAttribute("counties");
-        request.setAttribute("counties", counties);
+
+        String as = request.getParameter("as");
+        if (as != null && as.equals("gardener")){
+            System.out.println(as);
+            request.setAttribute("type",1 );
+        }
+
         request.getRequestDispatcher("/WEB-INF/Register.jsp").forward(
                 request, response);
 

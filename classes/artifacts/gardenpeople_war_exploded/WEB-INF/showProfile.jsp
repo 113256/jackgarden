@@ -31,99 +31,126 @@
 
 
 <!--navbar -->
-<div style="">
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <!--navbar-static-top will make it disappear if you scroll horizontally -->
-        <div class="container">
-            <!--navbar-brand is used for titles - it has larger text -->
+	<div style="">
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<!--navbar-static-top will make it disappear if you scroll horizontally -->
+			<div class="container">
+				<!--navbar-brand is used for titles - it has larger text -->
 
-            <a href="home" class="navbar-brand">Gardener Website</a>
+				<a href="home" class="navbar-brand">Gardener Website</a>
 
-            <!-- button
-        this button will appear if screen collapses (smaller screen)
-        -->
-            <button class="navbar-toggle" data-toggle="collapse"
-                    data-target=".navHeaderCollapse">
-                <span class="glyphicon glyphicon-th-list"></span>
-            </button>
+				<!-- button
+            this button will appear if screen collapses (smaller screen)
+            -->
+				<button class="navbar-toggle" data-toggle="collapse"
+					data-target=".navHeaderCollapse">
+					<span class="glyphicon glyphicon-th-list"></span>
+				</button>
 
-            <div class="collapse navbar-collapse navHeaderCollapse">
-                <!--navbar-nav gives styling and navbar-right aligns it to the right-->
-                <ul class="nav navbar-nav navbar-right">
-                    <c:choose>
-
-
-                        <c:when test="${empty sessionScope.user}">
-                            <li class="dropdown"><a class="dropdown-toggle" href=""
-                                                    data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
-
-                                <div class="dropdown-menu"
-                                     style="padding: 10px; min-width: 240px;">
+				<div class="collapse navbar-collapse navHeaderCollapse">`
+					<!--navbar-nav gives styling and navbar-right aligns it to the right-->
+					<ul class="nav navbar-nav navbar-right">
+						<c:choose>
 
 
-                                    <form action="login" method="post" role="form"
-                                          class="form-horizontal">
+							<c:when test="${empty sessionScope.user}">
 
-                                        <input class="form-control" id="inputUsername"
-                                               name="inputUsername" placeholder="Username" type="text"
-                                               style="margin-bottom: .5em"> <input
-                                            class="form-control" id="inputPassword" name="inputPassword"
-                                            placeholder="Password" type="password"
-                                            style="margin-bottom: .5em">
+								<li class="dropdown"><a class="dropdown-toggle" href=""
+									data-toggle="dropdown" id="loginDropdown">Sign In <strong class="caret"></strong></a>
 
-                                        <div class="checkbox">
-                                            <label><input type="checkbox"> Remember me</label>
-                                        </div>
-
-                                        <input class="btn btn-primary"
-                                               style="margin-top: .75em; width: 100%; height: 32px; font-size: 13px;"
-                                               type="submit" name="commit" value="Sign In">
-                                    </form>
+									<div class="dropdown-menu"
+										style="padding: 10px; min-width: 240px;">
 
 
-                                </div>
-                            </li>
-                            <li class=""><a class="" href="Register">Register</a></li>
-                        </c:when>
-                        <c:otherwise>
-                            <li class=""><a class="" href="#">${sessionScope.user.username}</a></li>
-                            <li class="dropdown"><a class="dropdown-toggle" href=""
-                                                    data-toggle="dropdown">My Account <strong
-                                    class="caret"></strong></a>
+										<form action="${pageContext.request.contextPath}/login" method="post" role="form"
+											class="form-horizontal">
 
-                                <ul class="dropdown-menu">
-                                    <li><a href="details">my details</a></li>
-                                    <c:if test="${sessionScope.user.gardener}">
-                                        <li><a href="profile">my public profile</a></li>
-                                        <li><a href="photos">my portfolio photos</a></li>
-                                    </c:if>
-                                </ul>
-                            </li>
-                            <li class=""><a class="" href="logout">Logout</a></li>
-                        </c:otherwise>
-                    </c:choose>
+											<input class="form-control" id="inputUsername"
+												name="inputUsername" placeholder="Username" type="text"
+												style="margin-bottom: .5em"> <input
+												class="form-control" id="inputPassword" name="inputPassword"
+												placeholder="Password" type="password"
+												style="margin-bottom: .5em">
+											<c:if test="${!empty requestScope.loginError}">
+												<div class="error">${requestScope.loginError}</div>
 
-                </ul>
-            </div>
+											</c:if>
 
-        </div>
-        <!--end of nav bar-->
-    </div>
-</div>
+											<div class="checkbox">
+												<label><input type="checkbox"> Remember me</label>
+											</div>
+
+
+											<input class="btn btn-primary"
+												style="margin-top: .75em; width: 100%; height: 32px; font-size: 13px;"
+												type="submit" name="commit" value="Sign In">
+										</form>
+
+
+									</div></li>
+								<li class=""><a class="" href="Register">Register</a></li>
+								<li class=""><a class="" href="findGardener">Find a gardener</a></li>
+							</c:when>
+							<c:otherwise>
+								<li class=""><a class="" href="#">${sessionScope.user.username}</a></li>
+								<li class="dropdown"><a class="dropdown-toggle" href=""
+									data-toggle="dropdown">My Account <strong class="caret"></strong></a>
+
+									<ul class="dropdown-menu">
+										<li><a href="details">My details</a></li>
+										<c:if test="${sessionScope.user.gardener}">
+											<li><a href="showProfile?id=${sessionScope.user.autoIncrementID}">My profile</a></li>
+											<li><a href="profile">Edit profile</a></li>
+											<li><a href="photos">My photos</a></li>
+											
+										</c:if>
+									</ul></li>
+									
+								<li class=""><a class="" href="logout">Logout</a></li>
+							</c:otherwise>
+						</c:choose>
+						<li class=""><a class="" href="faq">FAQ</a></li>
+					</ul>
+				</div>
+
+			</div>
+			
+		</div>
+	</div>
+	<!--end navbar-->
 
 <div class="container">
+	
+        <c:if test="${not empty message}">
+            <div class="warning">${message}</div>
+            </c:if>
 
-    <div class="largetext"><a href="findGardener">Search Page</a> -> <a href="${searchTerm}">Results</a>
+            <c:if test="${empty message}">
+            <ol class="breadcrumb">
+
+
+	<%--${searchTerm}--%>
+	 <c:if test="${fn:contains(searchTerm,'Results?')}">
+	 	<li><a href="findGardener">Search Page</a></li>
+  		<li><a href="${searchTerm}">Results</a></li>
+	 </c:if>
+	
+
+  <li class="active">${gardener.publicProfile.tradename}'s Profile</li>
+</ol>
+
+	<!-- 
+    <div class="largetext"><a href="">Search Page</a> -> <a href="${searchTerm}">Results</a>
         -> ${gardener.publicProfile.tradename}'s Profile
     </div>
-
+ -->
     <div class="row">
 
 
-        <div class="col-xs-12 col-sm-6 col-md-9">
+        <div class="col-lg-12">
             <div class="well well-sm">
                 <div class="row">
-                    <div class="col-sm-6 col-md-4">
+                    <div class="col-lg-3 col-xs-6">
                         <c:if test="${gardener.publicProfile.profileImage.path eq null}">
                             <img class="img-rounded" src="http://localhost:8080/images/no_photo.jpg" width="150px"
                                  class="img-rounded img-responsive"/>
@@ -136,7 +163,7 @@
                         </c:if>
                         <%--<img src="http://placehold.it/380x500" alt="" class="img-rounded img-responsive" />--%>
                     </div>
-                    <div class="col-sm-6 col-md-8">
+                    <div class="col-lg-3 col-xs-6">
                         <h4>
                             ${gardener.publicProfile.tradename}</h4>
 
@@ -149,7 +176,15 @@
                             <br/>
 
                         </p>
-                        <b>Qualifications</b>
+                       
+
+
+                        <!-- Split button -->
+
+                    </div>
+                    <div class="col-lg-6 col-xs-12">
+                    <h2></h2>
+                    	 <b>Qualifications</b>
 
                         <br>
                         <c:if test="${gardener.publicProfile.rhs1}">
@@ -223,10 +258,6 @@
 
                             </label>
                         </c:if>
-
-
-                        <!-- Split button -->
-
                     </div>
                 </div>
                 <div class="row">
@@ -278,8 +309,15 @@
 
 
     <div class="row">
-
-        <div class="col-md-5">
+		<c:choose>
+    <c:when test="${sessionScope.user.gardener}">
+        <div class="col-lg-12">
+    	</c:when>
+    	<c:otherwise>
+    	    <div class="col-lg-5">
+    	</c:otherwise>
+	</c:choose>
+        
         <h3>User Ratings</h3>
 
         <div>Average Score: ${gardener.avgReviewScore} from ${gardener.reviewCount} reviews</div>
@@ -293,8 +331,7 @@
                         <div class="well">
                             <div class="media">
 
-                                <div class="media-body">
-                                    <h4 class="media-heading">Review ${loop.index +1}</h4>
+                                <div class="media-body"><h4>${review.ratingDescription}</h4>
 
                                     <p class="text-right">By ${review.authorUsername}</p>
 
@@ -323,8 +360,23 @@
 
         </c:if>
         </div>
+        
+        <c:if test="${!sessionScope.user.gardener}">
         <div class="col-md-6">
             <h3>Leave a Review</h3>
+
+            <c:if test="${fn:length(errors) > 0}">
+                <div class="error">
+                    <ul>
+                        <c:forEach items="${errors}" var="error">
+                            <li>${error}</li>
+                        </c:forEach>
+                    </ul>
+                </div>
+            </c:if>
+            <c:if test="${not empty confirmation}">
+                <div class="success">${confirmation}</div>
+            </c:if>
 
             <div class="well well-sm">
                 <div class="text-right">
@@ -340,6 +392,7 @@
                             <input name="lat" type="hidden" value="${lat}">
                             <input name="lng" type="hidden" value="${lng}">
                             <input name="name" type="hidden" value="${name}">
+                            <input name="gardener_id" type="hidden" value="${gardener.autoIncrementID}">
                             <textarea class="form-control animated" cols="50" id="new-review" name="comment"
                                       placeholder="Enter your review here..." rows="5"></textarea>
 
@@ -356,14 +409,14 @@
             </div>
 
         </div>
-
+</c:if>
 
     </div>
 
 
 </div>
 
-
+</c:if>
 <script
         src="${pageContext.request.contextPath}/resources/js/jquery-2.1.1.min.js"></script>
 <!-- javascript-->

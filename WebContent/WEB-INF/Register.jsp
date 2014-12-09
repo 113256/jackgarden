@@ -155,7 +155,8 @@
 			</div>
 			<div class="radio">
 				<label> <input type="radio" name="accountTypeRadios"
-					value="gardener" <c:if test="${ requestScope.user.accountType== 'gardener'}">checked</c:if>> I am a Gardener wishing to advertise my
+					value="gardener" <c:if test="${ requestScope.user.accountType== 'gardener'}">checked</c:if>
+					<c:if test="${not empty type}">checked</c:if>> I am a Gardener wishing to advertise my
 					services here
 				</label>
 			</div>

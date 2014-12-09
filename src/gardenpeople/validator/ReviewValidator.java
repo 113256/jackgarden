@@ -16,14 +16,14 @@ public class ReviewValidator extends Validator{
     }
 
     public void checkReview(Review review){
-        checkUsername(review.getAuthorUsername());
+        checkUsernames(review.getAuthorUsername(), review.getGardenerUsername());
         checkRating(review.getRating());
         checkComment(review.getText());
     }
 
-    public void checkUsername(String author){
-        if (author == null){
-            errors.add("you must be logged in to leave a review");
+    public void checkUsernames(String author, String gardener){
+        if (author.equals(gardener)){
+            errors.add("you cannot leave a review for yourself!");
         }
 
     }

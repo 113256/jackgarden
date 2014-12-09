@@ -121,19 +121,24 @@
 
 <div class="container">
 	
-	<ol class="breadcrumb">
-	
-	
-	
-	 <c:if test="${not fn:contains(searchTerm,'home')}">
+        <c:if test="${not empty message}">
+            <div class="warning">${message}</div>
+            </c:if>
+
+            <c:if test="${empty message}">
+            <ol class="breadcrumb">
+
+
+	<%--${searchTerm}--%>
+	 <c:if test="${fn:contains(searchTerm,'Results?')}">
 	 	<li><a href="findGardener">Search Page</a></li>
   		<li><a href="${searchTerm}">Results</a></li>
 	 </c:if>
 	
-  
+
   <li class="active">${gardener.publicProfile.tradename}'s Profile</li>
 </ol>
-	
+
 	<!-- 
     <div class="largetext"><a href="">Search Page</a> -> <a href="${searchTerm}">Results</a>
         -> ${gardener.publicProfile.tradename}'s Profile
@@ -411,7 +416,7 @@
 
 </div>
 
-
+</c:if>
 <script
         src="${pageContext.request.contextPath}/resources/js/jquery-2.1.1.min.js"></script>
 <!-- javascript-->

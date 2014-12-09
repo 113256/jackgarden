@@ -12,87 +12,96 @@
 <title>Insert title here</title>
 </head>
 <body>
-<div style="">
-	<div class="navbar navbar-inverse navbar-fixed-top">
-		<!--navbar-static-top will make it disappear if you scroll horizontally -->
-		<div class="container">
-			<!--navbar-brand is used for titles - it has larger text -->
+<!--navbar -->
+	<div style="">
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<!--navbar-static-top will make it disappear if you scroll horizontally -->
+			<div class="container">
+				<!--navbar-brand is used for titles - it has larger text -->
 
-			<a href="" class="navbar-brand">Gardener Website</a>
+				<a href="home" class="navbar-brand">Gardener Website</a>
 
-			<!-- button
+				<!-- button
             this button will appear if screen collapses (smaller screen)
             -->
-			<button class="navbar-toggle" data-toggle="collapse"
+				<button class="navbar-toggle" data-toggle="collapse"
 					data-target=".navHeaderCollapse">
-				<span class="glyphicon glyphicon-th-list"></span>
-			</button>
+					<span class="glyphicon glyphicon-th-list"></span>
+				</button>
 
-			<div class="collapse navbar-collapse navHeaderCollapse">
-				<!--navbar-nav gives styling and navbar-right aligns it to the right-->
-				<ul class="nav navbar-nav navbar-right">
-					<c:choose>
-
-
-						<c:when test="${empty sessionScope.user}">
-							<li class="dropdown"><a class="dropdown-toggle" href=""
-													data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
-
-								<div class="dropdown-menu"
-									 style="padding: 10px; min-width: 240px;">
+				<div class="collapse navbar-collapse navHeaderCollapse">`
+					<!--navbar-nav gives styling and navbar-right aligns it to the right-->
+					<ul class="nav navbar-nav navbar-right">
+						<c:choose>
 
 
-									<form action="login" method="post" role="form"
-										  class="form-horizontal">
+							<c:when test="${empty sessionScope.user}">
 
-										<input class="form-control" id="inputUsername" name="inputUsername"
-											   placeholder="Username" type="text" style="margin-bottom: .5em">
+								<li class="dropdown"><a class="dropdown-toggle" href=""
+									data-toggle="dropdown" id="loginDropdown">Sign In <strong class="caret"></strong></a>
 
-										<input class="form-control" id="inputPassword" name="inputPassword"
-											   placeholder="Password" type="password"
-											   style="margin-bottom: .5em">
-
-										<div class="checkbox">
-											<label><input type="checkbox"> Remember me</label>
-										</div>
-
-										<input class="btn btn-primary"
-											   style="margin-top: .75em; width: 100%; height: 32px; font-size: 13px;"
-											   type="submit" name="commit" value="Sign In">
-									</form>
+									<div class="dropdown-menu"
+										style="padding: 10px; min-width: 240px;">
 
 
-								</div>
-							</li>
-							<li class=""><a class="" href="Register">Register</a></li>
-						</c:when>
-						<c:otherwise>
-							<li class=""><a class="" href="#">${sessionScope.user.username}</a></li>
-							<li class="dropdown"><a class="dropdown-toggle" href=""
-													data-toggle="dropdown">My Account <strong
-									class="caret"></strong></a>
+										<form action="${pageContext.request.contextPath}/login" method="post" role="form"
+											class="form-horizontal">
 
-								<ul class="dropdown-menu">
-									<li><a href="#">Edit Profile</a></li>
+											<input class="form-control" id="inputUsername"
+												name="inputUsername" placeholder="Username" type="text"
+												style="margin-bottom: .5em"> <input
+												class="form-control" id="inputPassword" name="inputPassword"
+												placeholder="Password" type="password"
+												style="margin-bottom: .5em">
+											<c:if test="${!empty requestScope.loginError}">
+												<div class="error">${requestScope.loginError}</div>
 
-								</ul>
-							</li>
-							<li class=""><a class="" href="logout">Logout</a></li>
-						</c:otherwise>
-					</c:choose>
+											</c:if>
+
+											<div class="checkbox">
+												<label><input type="checkbox"> Remember me</label>
+											</div>
 
 
-					<!-- <li class=""><a class="page-scroll" href="#whatWeDo">Our Services</a></li>
-                    <li class=""><a class="page-scroll" href="#review">Customer Reviews</a></li> -->
-				</ul>
+											<input class="btn btn-primary"
+												style="margin-top: .75em; width: 100%; height: 32px; font-size: 13px;"
+												type="submit" name="commit" value="Sign In">
+										</form>
+
+
+									</div></li>
+								<li class=""><a class="" href="Register">Register</a></li>
+								<li class=""><a class="" href="findGardener">Find a gardener</a></li>
+							</c:when>
+							<c:otherwise>
+								<li class=""><a class="" href="#">${sessionScope.user.username}</a></li>
+								<li class="dropdown"><a class="dropdown-toggle" href=""
+									data-toggle="dropdown">My Account <strong class="caret"></strong></a>
+
+									<ul class="dropdown-menu">
+										<li><a href="details">My details</a></li>
+										<c:if test="${sessionScope.user.gardener}">
+											<li><a href="showProfile?id=${sessionScope.user.autoIncrementID}">My profile</a></li>
+											<li><a href="profile">Edit profile</a></li>
+											<li><a href="photos">My photos</a></li>
+											
+										</c:if>
+									</ul></li>
+									
+								<li class=""><a class="" href="logout">Logout</a></li>
+							</c:otherwise>
+						</c:choose>
+						<li class=""><a class="" href="faq">FAQ</a></li>
+					</ul>
+				</div>
+
 			</div>
-
+			
 		</div>
-		<!--end of nav bar-->
 	</div>
-</div>
+	<!--end navbar-->
 <div class="confirmation">
-
+<div class = "container">
 	<c:choose>
 		<c:when test="${user.gardener}">
 			<h3>Congratulations ${user.username}, your account is
@@ -108,9 +117,34 @@
 
 	<a href="home">Home</a>
 </div>
+</div>
+
+<script
+		src="${pageContext.request.contextPath}/resources/js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var loginError = $("body").attr("data-loginError")
+			//alert(valuePassedFromJSP);
+			if(loginError.length > 0){
+				$("#loginDropdown").click();
+				//alert(loginError);
+
+			}
+		});
+		//alert(myObject);
+	</script>
+	<!-- javascript-->
+	<script
+		src="${pageContext.request.contextPath}/resources/js/bootstrap.js"></script>
 
 
-
+	<!-- Scrolling Nav JavaScript -->
+	<script
+		src="${pageContext.request.contextPath}/resources/js/jquery.easing.min.js"></script>
+	<script
+			src="${pageContext.request.contextPath}/resources/js/checklogin.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/js/scrolling-nav.js"></script>
 
 </body>
 </html>

@@ -1,2 +1,3 @@
 src/gardenpeople/servlet/PersonalPhotoUploadServlet.java
 src/gardenpeople/servlet/WorkPhotosUploadServlet.java
+.idea

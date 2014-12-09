@@ -2,39 +2,116 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="434b42ba-7e35-442a-a00c-307c5587e242" name="Default" comment="">
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\META-INF\MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\META-INF\content.xml" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\NewFile.jsp" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\Register.jsp" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\RegisterConfirmation.jsp" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\classes\gardenpeople\dao\CountyDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\classes\gardenpeople\dao\DAO.class" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\classes\gardenpeople\dao\ImageDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\classes\gardenpeople\dao\PublicProfileDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\classes\gardenpeople\dao\UserDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\classes\gardenpeople\db\ConnectionFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\classes\gardenpeople\exception\UserFriendlySQLException.class" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\classes\gardenpeople\model\County.class" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\classes\gardenpeople\model\GardenOwner.class" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\classes\gardenpeople\model\Gardener.class" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\classes\gardenpeople\model\ProfileImage.class" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\classes\gardenpeople\model\PublicProfile.class" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\classes\gardenpeople\model\User.class" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\classes\gardenpeople\servlet\Connect.class" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\classes\gardenpeople\servlet\EditDetailsServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\classes\gardenpeople\servlet\EditProfileServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\classes\gardenpeople\servlet\FindGardenerServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\classes\gardenpeople\servlet\HomeServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\classes\gardenpeople\servlet\LoginServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\classes\gardenpeople\servlet\LogoutServlet.class" afterPath="" />
       <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\classes\gardenpeople\servlet\PhotoUploadServlet.class" afterPath="" />
       <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\classes\gardenpeople\servlet\ProfilePhotosServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\production\gardenpeople\gardenpeople\servlet\PhotoUploadServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\classes\gardenpeople\servlet\RegisterServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\classes\gardenpeople\servlet\ResultsServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\classes\gardenpeople\validator\ProfileValidator.class" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\classes\gardenpeople\validator\UserValidator.class" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\classes\gardenpeople\validator\Validator.class" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\details.jsp" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\findgardener.jsp" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\home.jsp" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\lib\jstl-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\lib\mysql-connector-java-5.1.34-bin.jar" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\photos.jsp" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\profile.jsp" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\results.jsp" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\results_backup.jsp" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\WEB-INF\web.xml" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\css\allpages.css" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\css\bootstrap-select.css" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\css\bootstrap-select.css.map" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\css\bootstrap-select.min.css" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\css\bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\css\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\css\scrolling-nav.css" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\css\styles.css" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Add.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Attention.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Blue.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Cancel.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Download.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Fast Forward.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Fast Rewind.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Favorite.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Forward.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Graphite.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Green.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Grey.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Help.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Info.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Left.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Loop Off.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Loop On.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Message.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Orange.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Pause.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Play Green.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Play.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Purple.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Record Off.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Record On.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Red.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Refresh.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Remove Red.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Remove.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Search.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Shuffle Off.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Shuffle On.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Smart.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Snapback.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Snapforward.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Stop.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Upload.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Valid Blue.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\icons\Knob Valid Green.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\italy.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\img\versailles.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\js\bootstrap-select.js" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\js\bootstrap-select.js.map" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\js\bootstrap-select.min.js" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\js\bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\js\bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\js\checklogin.js" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\js\fileinput.js" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\js\jquery-1.11.0.js" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\js\jquery-2.1.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\js\jquery.easing.min.js" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\js\scrolling-nav.js" afterPath="" />
+      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\artifacts\gardenpeople_war_exploded\resources\scripts\map.js" afterPath="" />
       <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\classes\production\gardenpeople\gardenpeople\servlet\ProfilePhotosServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\src\gardenpeople\servlet\PersonalPhotoUploadServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\src\gardenpeople\servlet\WorkPhotosUploadServlet.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/WEB-INF/classes/gardenpeople/servlet/RegisterServlet.class" afterPath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/WEB-INF/classes/gardenpeople/servlet/RegisterServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/production/gardenpeople/gardenpeople/servlet/RegisterServlet.class" afterPath="$PROJECT_DIR$/classes/production/gardenpeople/gardenpeople/servlet/RegisterServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/WEB-INF/classes/gardenpeople/model/Review.class" afterPath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/WEB-INF/classes/gardenpeople/model/Review.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/production/gardenpeople/gardenpeople/model/Review.class" afterPath="$PROJECT_DIR$/classes/production/gardenpeople/gardenpeople/model/Review.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/WEB-INF/classes/gardenpeople/validator/ReviewValidator.class" afterPath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/WEB-INF/classes/gardenpeople/validator/ReviewValidator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/production/gardenpeople/gardenpeople/validator/ReviewValidator.class" afterPath="$PROJECT_DIR$/classes/production/gardenpeople/gardenpeople/validator/ReviewValidator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/WEB-INF/classes/gardenpeople/servlet/ShowProfileServlet.class" afterPath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/WEB-INF/classes/gardenpeople/servlet/ShowProfileServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/production/gardenpeople/gardenpeople/servlet/ShowProfileServlet.class" afterPath="$PROJECT_DIR$/classes/production/gardenpeople/gardenpeople/servlet/ShowProfileServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/WEB-INF/classes/gardenpeople/servlet/WorkPhotosUploadServlet.class" afterPath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/WEB-INF/classes/gardenpeople/servlet/WorkPhotosUploadServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/production/gardenpeople/gardenpeople/servlet/WorkPhotosUploadServlet.class" afterPath="$PROJECT_DIR$/classes/production/gardenpeople/gardenpeople/servlet/WorkPhotosUploadServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/Register.jsp" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/Register.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/WEB-INF/Register.jsp" afterPath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/WEB-INF/Register.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/WEB-INF/RegisterConfirmation.jsp" afterPath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/WEB-INF/RegisterConfirmation.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gardenpeople/servlet/RegisterServlet.java" afterPath="$PROJECT_DIR$/src/gardenpeople/servlet/RegisterServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gardenpeople/validator/ReviewValidator.java" afterPath="$PROJECT_DIR$/src/gardenpeople/validator/ReviewValidator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gardenpeople/servlet/ShowProfileServlet.java" afterPath="$PROJECT_DIR$/src/gardenpeople/servlet/ShowProfileServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/resources/css/allpages.css" afterPath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/resources/css/allpages.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/WEB-INF/details.jsp" afterPath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/WEB-INF/details.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/WEB-INF/findgardener.jsp" afterPath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/WEB-INF/findgardener.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/home.jsp" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/home.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/WEB-INF/home.jsp" afterPath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/WEB-INF/home.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/WEB-INF/photos.jsp" afterPath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/WEB-INF/photos.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/WEB-INF/profile.jsp" afterPath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/WEB-INF/profile.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/WEB-INF/results.jsp" afterPath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/WEB-INF/results.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/showProfile.jsp" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/showProfile.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/WEB-INF/showProfile.jsp" afterPath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/WEB-INF/showProfile.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/resources/css/styles.css" afterPath="$PROJECT_DIR$/classes/artifacts/gardenpeople_war_exploded/resources/css/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/production/gardenpeople/gardenpeople/dao/GardenerDAO.class" afterPath="$PROJECT_DIR$/classes/production/gardenpeople/gardenpeople/dao/GardenerDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/production/gardenpeople/gardenpeople/dao/PublicProfileDAO.class" afterPath="$PROJECT_DIR$/classes/production/gardenpeople/gardenpeople/dao/PublicProfileDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/production/gardenpeople/gardenpeople/dao/UserDAO.class" afterPath="$PROJECT_DIR$/classes/production/gardenpeople/gardenpeople/dao/UserDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="G:\JavaEE_Dev\PROJECTS\FORKED\gardenpeople\GardenPeople.iml" afterPath="$PROJECT_DIR$/gardenpeople.iml" />
     </list>
     <ignored path="GardenPeople.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,30 +139,25 @@
     <favorites_list name="GardenPeople" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.63092">
+    <splitter split-orientation="horizontal" split-proportion="0.4375645">
       <split-first>
         <leaf>
-          <file leaf-file-name="showProfile.jsp" pinned="false" current-in-tab="true">
+          <file leaf-file-name="showProfile.jsp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/showProfile.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.10206422" vertical-offset="2138" max-vertical-offset="5406">
-                  <caret line="131" column="8" selection-start-line="131" selection-start-column="4" selection-end-line="131" selection-end-column="25" />
-                  <folding>
-                    <element signature="n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                  </folding>
+                <state vertical-scroll-proportion="-6.6538463" vertical-offset="1867" max-vertical-offset="8007">
+                  <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="PersonalPhotoUploadServlet.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/gardenpeople/servlet/PersonalPhotoUploadServlet.java">
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="199" max-vertical-offset="1615">
-                  <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                <state vertical-scroll-proportion="0.04244694" vertical-offset="0" max-vertical-offset="801">
+                  <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -93,8 +165,8 @@
           <file leaf-file-name="home.jsp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/home.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-17.23077" vertical-offset="2119" max-vertical-offset="4505">
-                  <caret line="151" column="4" selection-start-line="151" selection-start-column="4" selection-end-line="151" selection-end-column="4" />
+                <state vertical-scroll-proportion="-17.692308" vertical-offset="2430" max-vertical-offset="4845">
+                  <caret line="170" column="47" selection-start-line="170" selection-start-column="47" selection-end-line="170" selection-end-column="47" />
                   <folding />
                 </state>
               </provider>
@@ -103,7 +175,7 @@
           <file leaf-file-name="Register.jsp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/Register.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-13.269231" vertical-offset="3004" max-vertical-offset="4097">
+                <state vertical-scroll-proportion="0.0" vertical-offset="3004" max-vertical-offset="4097">
                   <caret line="197" column="0" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
                   <folding />
                 </state>
@@ -113,7 +185,7 @@
           <file leaf-file-name="ShowProfileServlet.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/gardenpeople/servlet/ShowProfileServlet.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-20.035715" vertical-offset="765" max-vertical-offset="3094">
+                <state vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="3094">
                   <caret line="96" column="27" selection-start-line="96" selection-start-column="27" selection-end-line="96" selection-end-column="27" />
                   <folding>
                     <element signature="e#1091#1099#0" expanded="true" />
@@ -147,18 +219,8 @@
           <file leaf-file-name="faq.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/gardenpeople/servlet/faq.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+                <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="527">
                   <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="WorkPhotosUploadServlet.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/gardenpeople/servlet/WorkPhotosUploadServlet.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2193">
-                  <caret line="30" column="82" selection-start-line="30" selection-start-column="82" selection-end-line="30" selection-end-column="82" />
                   <folding />
                 </state>
               </provider>
@@ -212,11 +274,7 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="1122">
                   <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-                  <folding>
-                    <element signature="imports" expanded="false" />
-                    <element signature="e#442#443#0" expanded="false" />
-                    <element signature="e#470#471#0" expanded="false" />
-                  </folding>
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -260,7 +318,7 @@
           <file leaf-file-name="ImageDAO.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/gardenpeople/dao/ImageDAO.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1649">
+                <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1513">
                   <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
                   <folding />
                 </state>
@@ -270,20 +328,12 @@
           <file leaf-file-name="GardenerDAO.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/gardenpeople/dao/GardenerDAO.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.83073497" vertical-offset="1940" max-vertical-offset="4658">
+                <state vertical-scroll-proportion="0.9031477" vertical-offset="1940" max-vertical-offset="4658">
                   <caret line="166" column="0" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
                   <folding>
-                    <marker date="1418133346301" expanded="true" signature="549:799" placeholder="Select *, CO..." />
-                    <marker date="1418133346301" expanded="true" signature="549:844" placeholder="Select *, CO..profiles..." />
-                    <marker date="1418133346301" expanded="true" signature="878:1247" placeholder="Select *, CO..profiles..." />
-                    <marker date="1418133346301" expanded="true" signature="878:1248" placeholder="Select *, CO..profiles..." />
-                    <marker date="1418133346301" expanded="true" signature="878:1300" placeholder="Select *, CO..profiles..." />
-                    <marker date="1418133346301" expanded="true" signature="878:1305" placeholder="Select *, CO..profiles..." />
-                    <marker date="1418133346301" expanded="true" signature="4864:5191" placeholder="Select *, CO..profiles..." />
-                    <marker date="1418133346301" expanded="true" signature="4864:5192" placeholder="Select *, CO..profiles..." />
-                    <marker date="1418133346301" expanded="true" signature="4864:5195" placeholder="Select *, CO..profiles..." />
-                    <marker date="1418133346301" expanded="true" signature="8805:9347" placeholder="SELECT *, ( ..profiles..." />
-                    <marker date="1418133346301" expanded="true" signature="8805:9397" placeholder="SELECT *, ( ..profiles..." />
+                    <marker date="1418155558085" expanded="true" signature="878:1305" placeholder="Select *, CO..profiles..." />
+                    <marker date="1418155558085" expanded="true" signature="4864:5191" placeholder="Select *, CO..profiles..." />
+                    <marker date="1418155558085" expanded="true" signature="8805:9397" placeholder="SELECT *, ( ..profiles..." />
                   </folding>
                 </state>
               </provider>
@@ -292,7 +342,7 @@
           <file leaf-file-name="details.jsp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/details.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-6.769231" vertical-offset="1575" max-vertical-offset="4216">
+                <state vertical-scroll-proportion="0.0" vertical-offset="1575" max-vertical-offset="4216">
                   <caret line="103" column="12" selection-start-line="103" selection-start-column="12" selection-end-line="103" selection-end-column="12" />
                   <folding />
                 </state>
@@ -359,12 +409,12 @@
         <option value="$PROJECT_DIR$/src/gardenpeople/model/Review.java" />
         <option value="$PROJECT_DIR$/src/gardenpeople/servlet/WorkPhotosUploadServlet.java" />
         <option value="$PROJECT_DIR$/src/gardenpeople/servlet/PersonalPhotoUploadServlet.java" />
-        <option value="$PROJECT_DIR$/WebContent/WEB-INF/home.jsp" />
         <option value="$PROJECT_DIR$/WebContent/WEB-INF/Register.jsp" />
         <option value="$PROJECT_DIR$/src/gardenpeople/servlet/RegisterServlet.java" />
         <option value="$PROJECT_DIR$/src/gardenpeople/dao/GardenerDAO.java" />
         <option value="$PROJECT_DIR$/src/gardenpeople/servlet/ShowProfileServlet.java" />
         <option value="$PROJECT_DIR$/WebContent/WEB-INF/showProfile.jsp" />
+        <option value="$PROJECT_DIR$/WebContent/WEB-INF/home.jsp" />
       </list>
     </option>
   </component>
@@ -379,9 +429,9 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="524" />
-    <option name="y" value="276" />
-    <option name="width" value="2265" />
+    <option name="x" value="13" />
+    <option name="y" value="151" />
+    <option name="width" value="2366" />
     <option name="height" value="1349" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -409,6 +459,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -631,9 +682,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GardenPeople" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gardenpeople" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -645,7 +709,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../apache-tomcat-8.0.15/jquery-2.1.1.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../apache-tomcat-8.0.15/lib/servlet-api.jar!/" />
     <property name="LayoutCode.rearrangeEntriesJSP" value="false" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -918,7 +982,6 @@
     </configuration>
     <configuration default="false" name="gardennew" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.14" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <deployment>
         <artifact name="gardenpeople:war exploded">
@@ -1018,46 +1081,47 @@
       <workItem from="1417822426872" duration="4359000" />
       <workItem from="1417826857565" duration="48346000" />
       <workItem from="1417977685901" duration="15721000" />
+      <workItem from="1418155566613" duration="1380000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222200000" />
+    <option name="totallyTimeSpent" value="223580000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="524" y="276" width="2265" height="1349" extended-state="0" />
-    <editor active="false" />
+    <frame x="13" y="151" width="2366" height="1349" extended-state="0" />
+    <editor active="true" />
     <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.105560035" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962631" sideWeight="0.18979779" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286771" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31184527" sideWeight="0.8097426" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295964" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17531915" sideWeight="0.6628571" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19479905" sideWeight="0.33571428" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.399348" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.105560035" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24335213" sideWeight="0.8097426" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295964" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18319254" sideWeight="0.6628571" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19479905" sideWeight="0.33571428" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.399348" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994923" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1087,7 +1151,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/WebContent/WEB-INF/home.jsp</url>
-          <line>79</line>
+          <line>81</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
@@ -1119,6 +1183,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/gardenpeople/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="3400">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/resources/js/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.49428868" vertical-offset="1020" max-vertical-offset="35972">
@@ -1148,7 +1220,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
           <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1229,7 +1300,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1347" max-vertical-offset="2329">
           <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1244,7 +1314,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1328,7 +1397,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1353,13 +1421,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="125" max-vertical-offset="1785">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#382#390#0" expanded="false" />
-            <marker date="1417913368261" expanded="true" signature="-1:-1" placeholder="Select * FRO..reviews..." />
-            <marker date="1417913368261" expanded="true" signature="-1:-1" placeholder="Select * FRO..reviews..." />
-            <marker date="1417913368261" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1381,11 +1442,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="1122">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#442#443#0" expanded="false" />
-            <element signature="e#470#471#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1401,9 +1458,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
           <caret line="33" column="53" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
-          <folding>
-            <marker date="1417310983111" expanded="true" signature="-1:-1" placeholder="Select * FRO..counties..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1463,10 +1518,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
           <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <element signature="e#289#290#0" expanded="false" />
-            <element signature="e#317#318#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1497,36 +1548,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gardenpeople/servlet/WorkPhotosUploadServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2193">
-          <caret line="30" column="82" selection-start-line="30" selection-start-column="82" selection-end-line="30" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gardenpeople/servlet/PersonalPhotoUploadServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="199" max-vertical-offset="1615">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/resources/js/checklogin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="911">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.23077" vertical-offset="2119" max-vertical-offset="4505">
-          <caret line="151" column="4" selection-start-line="151" selection-start-column="4" selection-end-line="151" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -1541,7 +1566,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/Register.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.269231" vertical-offset="3004" max-vertical-offset="4097">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3004" max-vertical-offset="4097">
           <caret line="197" column="0" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
           <folding />
         </state>
@@ -1559,7 +1584,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/details.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.769231" vertical-offset="1575" max-vertical-offset="4216">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1575" max-vertical-offset="4216">
           <caret line="103" column="12" selection-start-line="103" selection-start-column="12" selection-end-line="103" selection-end-column="12" />
           <folding />
         </state>
@@ -1567,27 +1592,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gardenpeople/dao/GardenerDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.83073497" vertical-offset="1940" max-vertical-offset="4658">
+        <state vertical-scroll-proportion="0.9031477" vertical-offset="1940" max-vertical-offset="4658">
           <caret line="166" column="0" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
           <folding>
-            <marker date="1418133346301" expanded="true" signature="549:799" placeholder="Select *, CO..." />
-            <marker date="1418133346301" expanded="true" signature="549:844" placeholder="Select *, CO..profiles..." />
-            <marker date="1418133346301" expanded="true" signature="878:1247" placeholder="Select *, CO..profiles..." />
-            <marker date="1418133346301" expanded="true" signature="878:1248" placeholder="Select *, CO..profiles..." />
-            <marker date="1418133346301" expanded="true" signature="878:1300" placeholder="Select *, CO..profiles..." />
-            <marker date="1418133346301" expanded="true" signature="878:1305" placeholder="Select *, CO..profiles..." />
-            <marker date="1418133346301" expanded="true" signature="4864:5191" placeholder="Select *, CO..profiles..." />
-            <marker date="1418133346301" expanded="true" signature="4864:5192" placeholder="Select *, CO..profiles..." />
-            <marker date="1418133346301" expanded="true" signature="4864:5195" placeholder="Select *, CO..profiles..." />
-            <marker date="1418133346301" expanded="true" signature="8805:9347" placeholder="SELECT *, ( ..profiles..." />
-            <marker date="1418133346301" expanded="true" signature="8805:9397" placeholder="SELECT *, ( ..profiles..." />
+            <marker date="1418155558085" expanded="true" signature="878:1305" placeholder="Select *, CO..profiles..." />
+            <marker date="1418155558085" expanded="true" signature="4864:5191" placeholder="Select *, CO..profiles..." />
+            <marker date="1418155558085" expanded="true" signature="8805:9397" placeholder="SELECT *, ( ..profiles..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gardenpeople/servlet/ShowProfileServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.035715" vertical-offset="765" max-vertical-offset="3094">
+        <state vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="3094">
           <caret line="96" column="27" selection-start-line="96" selection-start-column="27" selection-end-line="96" selection-end-column="27" />
           <folding>
             <element signature="e#1091#1099#0" expanded="true" />
@@ -1595,14 +1612,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.692308" vertical-offset="2430" max-vertical-offset="4845">
+          <caret line="170" column="47" selection-start-line="170" selection-start-column="47" selection-end-line="170" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/showProfile.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10206422" vertical-offset="2138" max-vertical-offset="5406">
-          <caret line="131" column="8" selection-start-line="131" selection-start-column="4" selection-end-line="131" selection-end-column="25" />
-          <folding>
-            <element signature="n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="-6.6538463" vertical-offset="1867" max-vertical-offset="8007">
+          <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04244694" vertical-offset="0" max-vertical-offset="801">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1625,7 +1655,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Web</last-edited>
+          <last-edited>Web (gardenpeople)|Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1672,7 +1702,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>jQuery 1.1.</last-edited>
+          <last-edited>mysql-connector-java-5.1.34-bin</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

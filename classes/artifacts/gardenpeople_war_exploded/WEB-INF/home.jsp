@@ -1,163 +1,183 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<%@ page import="java.util.*"%>
-<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+         pageEncoding="ISO-8859-1" %>
+<%@ page import="java.util.*" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="generator" content="Bootply" />
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/resources/css/allpages.css">
-<title>Home</title>
+    <meta name="generator" content="Bootply"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link rel="stylesheet" type="text/css"
+          href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="${pageContext.request.contextPath}/resources/css/allpages.css">
+    <title>Home</title>
 </head>
 <body data-loginerror="<c:if test="${!empty requestScope.loginError}">loginError</c:if>">
 
 
 <!--navbar -->
-	<div style="">
-		<div class="navbar navbar-inverse navbar-fixed-top">
-			<!--navbar-static-top will make it disappear if you scroll horizontally -->
-			<div class="container">
-				<!--navbar-brand is used for titles - it has larger text -->
+<div style="">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <!--navbar-static-top will make it disappear if you scroll horizontally -->
+        <div class="container">
+            <!--navbar-brand is used for titles - it has larger text -->
 
-				<a href="home" class="navbar-brand">Gardener Website</a>
+            <a href="home" class="navbar-brand">Gardener Website</a>
 
-				<!-- button
-            this button will appear if screen collapses (smaller screen)
-            -->
-				<button class="navbar-toggle" data-toggle="collapse"
-					data-target=".navHeaderCollapse">
-					<span class="glyphicon glyphicon-th-list"></span>
-				</button>
+            <!-- button
+        this button will appear if screen collapses (smaller screen)
+        -->
+            <button class="navbar-toggle" data-toggle="collapse"
+                    data-target=".navHeaderCollapse">
+                <span class="glyphicon glyphicon-th-list"></span>
+            </button>
 
-				<div class="collapse navbar-collapse navHeaderCollapse">`
-					<!--navbar-nav gives styling and navbar-right aligns it to the right-->
-					<ul class="nav navbar-nav navbar-right">
-						<c:choose>
-
-
-							<c:when test="${empty sessionScope.user}">
-
-								<li class="dropdown"><a class="dropdown-toggle" href=""
-									data-toggle="dropdown" id="loginDropdown">Sign In <strong class="caret"></strong></a>
-
-									<div class="dropdown-menu"
-										style="padding: 10px; min-width: 240px;">
+            <div class="collapse navbar-collapse navHeaderCollapse">`
+                <!--navbar-nav gives styling and navbar-right aligns it to the right-->
+                <ul class="nav navbar-nav navbar-right">
+                    <c:choose>
 
 
-										<form action="${pageContext.request.contextPath}/login" method="post" role="form"
-											class="form-horizontal">
+                        <c:when test="${empty sessionScope.user}">
 
-											<input class="form-control" id="inputUsername"
-												name="inputUsername" placeholder="Username" type="text"
-												style="margin-bottom: .5em"> <input
-												class="form-control" id="inputPassword" name="inputPassword"
-												placeholder="Password" type="password"
-												style="margin-bottom: .5em">
-											<c:if test="${!empty requestScope.loginError}">
-												<div class="error">${requestScope.loginError}</div>
+                            <li class="dropdown"><a class="dropdown-toggle" href=""
+                                                    data-toggle="dropdown" id="loginDropdown">Sign In <strong
+                                    class="caret"></strong></a>
 
-											</c:if>
-
-											<div class="checkbox">
-												<label><input type="checkbox"> Remember me</label>
-											</div>
+                                <div class="dropdown-menu"
+                                     style="padding: 10px; min-width: 240px;">
 
 
-											<input class="btn btn-primary"
-												style="margin-top: .75em; width: 100%; height: 32px; font-size: 13px;"
-												type="submit" name="commit" value="Sign In">
-										</form>
+                                    <form action="${pageContext.request.contextPath}/login" method="post" role="form"
+                                          class="form-horizontal">
+
+                                        <input class="form-control" id="inputUsername"
+                                               name="inputUsername" placeholder="Username" type="text"
+                                               style="margin-bottom: .5em"> <input
+                                            class="form-control" id="inputPassword" name="inputPassword"
+                                            placeholder="Password" type="password"
+                                            style="margin-bottom: .5em">
+                                        <c:if test="${!empty requestScope.loginError}">
+                                            <div class="error">${requestScope.loginError}</div>
+
+                                        </c:if>
+
+                                        <div class="checkbox">
+                                            <label><input type="checkbox"> Remember me</label>
+                                        </div>
 
 
-									</div></li>
-								<li class=""><a class="" href="Register">Register</a></li>
-								<li class=""><a class="" href="findGardener">Find a gardener</a></li>
-							</c:when>
-							<c:otherwise>
-								<li class=""><a class="" href="#">${sessionScope.user.username}</a></li>
-								<li class="dropdown"><a class="dropdown-toggle" href=""
-									data-toggle="dropdown">My Account <strong class="caret"></strong></a>
+                                        <input class="btn btn-primary"
+                                               style="margin-top: .75em; width: 100%; height: 32px; font-size: 13px;"
+                                               type="submit" name="commit" value="Sign In">
+                                    </form>
 
-									<ul class="dropdown-menu">
-										<li><a href="details">My details</a></li>
-										<c:if test="${sessionScope.user.gardener}">
-											<li><a href="showProfile?id=${sessionScope.user.autoIncrementID}">My profile</a></li>
-											<li><a href="profile">Edit profile</a></li>
-											<li><a href="photos">My photos</a></li>
-											
-										</c:if>
-									</ul></li>
-									
-								<li class=""><a class="" href="logout">Logout</a></li>
-							</c:otherwise>
-						</c:choose>
-						<li class=""><a class="" href="faq">FAQ</a></li>
-					</ul>
-				</div>
 
-			</div>
-			
-		</div>
-	</div>
-	<!--end navbar-->
-	<!--  
-	<div class="btn-group" data-toggle="buttons">
-		<label class="btn btn-primary"> <input type="radio"
-			name="options" id="option1">Find a Gardener
-		</label> <label class="btn btn-primary"> <input type="radio"
-			name="options" id="option2"><a href="Register"></a>
-		</label>
+                                </div>
+                            </li>
+                            <li class=""><a class="" href="Register">Register</a></li>
+                            <li class=""><a class="" href="findGardener">Find a gardener</a></li>
+                        </c:when>
+                        <c:otherwise>
+                            <li class=""><a class="" href="#">${sessionScope.user.username}</a></li>
+                            <li class="dropdown"><a class="dropdown-toggle" href=""
+                                                    data-toggle="dropdown">My Account <strong
+                                    class="caret"></strong></a>
 
-	</div>
+                                <ul class="dropdown-menu">
+                                    <li><a href="details">My details</a></li>
+                                    <c:if test="${sessionScope.user.gardener}">
+                                        <li><a href="showProfile?id=${sessionScope.user.autoIncrementID}">My profile</a>
+                                        </li>
+                                        <li><a href="profile">Edit profile</a></li>
+                                        <li><a href="photos">My photos</a></li>
+
+                                    </c:if>
+                                </ul>
+                            </li>
+
+                            <li class=""><a class="" href="logout">Logout</a></li>
+                        </c:otherwise>
+                    </c:choose>
+                    <li class=""><a class="" href="faq">FAQ</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!--end navbar-->
+<!--
+<div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-primary"> <input type="radio"
+        name="options" id="option1">Find a Gardener
+    </label> <label class="btn btn-primary"> <input type="radio"
+        name="options" id="option2"><a href="Register"></a>
+    </label>
+
+</div>
 -->
-	<header>
-	<div class="container">
-	 <br><br><br><br><br><br>
-		<h1 style="font-size: 7vw;">Welcome To Garden People</h1>
-	 <br><br><br><br><br><br>
-	</div>
-	</header>
+<header>
+    <div class="container">
+        <br><br><br><br><br><br>
+
+        <h1 style="font-size: 7vw;">Welcome To Garden People</h1>
+        <br><br><br><br><br><br>
+    </div>
+</header>
 
 
-	<section id="findGardener" class="">
-	<br>
-	<br>
-	<br>
+<section id="findGardener" class="">
+    <br>
+    <br>
+    <br>
 
-	<div class="row"
-		style="margin-left: 2vw; margin-right: 2vw; text-align: center">
-		
-		
-		<div class="col-md-6">
-		<div onclick="window.location = 'findGardener'">
-			<div class="jumbotron">
-				<h1>Looking For A Gardener</h1>
-				<br> <br> <br> <a class="btn btn-info"
-					href="findGardener">Click Here</a>
-			</div></div>
-		</div>
-		
-		
-		
-		
-		<div class="col-md-6">
-		<div onclick="window.location = 'Register?as=gardener'">
-			<div class="jumbotron">
-				<h1>Are You A Gardener?</h1>
-				<br> <br> <br> <a class="btn btn-info" href = "Register?as=gardener">Click Here</a>
-			</div>
-		</div>
-	</div>
-	
-		
-	</div>
+    <div class="row"
+         style="margin-left: 2vw; margin-right: 2vw; text-align: center">
 
-	</section>
+
+        <div class="col-md-6">
+            <div onclick="window.location = 'findGardener'">
+                <div class="hoverHand">
+                    <div class="jumbotron">
+
+                        <h1>Looking For A Gardener</h1>
+                        <br> <br> <br> <!--<a class="btn btn-info"
+					href="findGardener">Click Here</a>  -->
+                        <div class="panel-body" style="font-size:20px; text-align: left">
+
+                            <span class="glyphicon glyphicon-ok"></span> We have registered professionals with a wide
+                            range of skills<br>
+                            <span class="glyphicon glyphicon-ok"></span> View professionals who work in your area.<br>
+                            <span class="glyphicon glyphicon-ok"></span> View detailed profiles and user feedback to
+                            help you decide who to hire.<br>
+                            <br>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-6">
+
+            <div onclick="window.location = 'Register?as=gardener'">
+                <div class="jumbotron">
+                    <h1>Are You A Gardener?</h1>
+                    <br> <br> <br> <a class="btn btn-info" href="Register?as=gardener">Click Here</a>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+</section>
 
 <!--  
 	<section id="whatWeDo" class="bg-light-gray">
@@ -215,44 +235,44 @@
 	</section>
 -->
 
-	<div style="margin-bottom: 20vw">
-		<br>
-	</div>
+<div style="margin-bottom: 20vw">
+    <br>
+</div>
 
-	<!-- jquery-->
-	<script type="text/javascript">
-	//$('business').click(function(){
-	//  window.location = "Register";
-	//});
-	</script>
-	
-	
-	<script
-		src="${pageContext.request.contextPath}/resources/js/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			var loginError = $("body").attr("data-loginError")
-			//alert(valuePassedFromJSP);
-			if(loginError.length > 0){
-				$("#loginDropdown").click();
-				//alert(loginError);
-
-			}
-		});
-		//alert(myObject);
-	</script>
-	<!-- javascript-->
-	<script
-		src="${pageContext.request.contextPath}/resources/js/bootstrap.js"></script>
+<!-- jquery-->
+<script type="text/javascript">
+    //$('business').click(function(){
+    //  window.location = "Register";
+    //});
+</script>
 
 
-	<!-- Scrolling Nav JavaScript -->
-	<script
-		src="${pageContext.request.contextPath}/resources/js/jquery.easing.min.js"></script>
-	<script
-			src="${pageContext.request.contextPath}/resources/js/checklogin.js"></script>
-	<script
-		src="${pageContext.request.contextPath}/resources/js/scrolling-nav.js"></script>
+<script
+        src="${pageContext.request.contextPath}/resources/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var loginError = $("body").attr("data-loginError")
+        //alert(valuePassedFromJSP);
+        if (loginError.length > 0) {
+            $("#loginDropdown").click();
+            //alert(loginError);
+
+        }
+    });
+    //alert(myObject);
+</script>
+<!-- javascript-->
+<script
+        src="${pageContext.request.contextPath}/resources/js/bootstrap.js"></script>
+
+
+<!-- Scrolling Nav JavaScript -->
+<script
+        src="${pageContext.request.contextPath}/resources/js/jquery.easing.min.js"></script>
+<script
+        src="${pageContext.request.contextPath}/resources/js/checklogin.js"></script>
+<script
+        src="${pageContext.request.contextPath}/resources/js/scrolling-nav.js"></script>
 
 
 </body>

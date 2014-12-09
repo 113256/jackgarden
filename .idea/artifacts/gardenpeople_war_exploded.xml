@@ -7,8 +7,8 @@
           <element id="module-output" name="gardenpeople" />
         </element>
         <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/../jstl-1.2.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/../../../apache-tomcat-8.0.15/lib/annotations-api.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../../apache-tomcat-8.0.15/lib/jstl.jar" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="gardenpeople/web/Web" />
